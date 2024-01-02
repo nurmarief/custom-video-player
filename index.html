@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Video Player</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1 title="Custom Video Player"></h1>
+      <div class="video-player">
+        <video
+          id="video"
+          class="video-player__video"
+          src="https://vod-progressive.akamaized.net/exp=1704200117~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F662%2F17%2F428310787%2F1858735932.mp4~hmac=a0888ff53188f075f83a15e70c19803a3191b7dbe33b88dc34473cb2c48bd322/vimeo-prod-skyfire-std-us/01/662/17/428310787/1858735932.mp4?filename=file.mp4"
+          playsinline
+        ></video>
+        <div class="video-player__control-panel">
+          <div class="video-player__control-panel-content-container">
+            <div class="video-player__progress-bar-container" title="Seek">
+              <div class="video-player__progress-bar"></div>
+            </div>
+            <div class="video-player__button-container">
+              <div class="video-player__button-group-left">
+                <div class="video-player__play-btn">
+                  <i class="fas fa-play" title="Play" id="play-btn"></i>
+                </div>
+                <div class="video-player__volume">
+                  <div class="video-player__volume-icon">
+                    <i
+                      class="fas fa-volume-up"
+                      title="Mute"
+                      id="volume-icon"
+                    ></i>
+                  </div>
+                  <div
+                    class="video-player__volume-bar-container"
+                    title="Change Volume"
+                  >
+                    <div class="video-player__volume-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="video-player__button-group-right">
+                <div
+                  class="video-player__speed-option-container"
+                  title="Playback Rate"
+                >
+                  <select
+                    name="playbackRate"
+                    class="video-player__speed-selection"
+                  >
+                    <option class="video-player__speed-option" value="0.5">
+                      0.5 x
+                    </option>
+                    <option class="video-player__speed-option" value="0.75">
+                      0.75 x
+                    </option>
+                    <option
+                      class="video-player__speed-option"
+                      value="1"
+                      selected
+                    >
+                      1 x
+                    </option>
+                    <option class="video-player__speed-option" value="1.5">
+                      1.5 x
+                    </option>
+                    <option class="video-player__speed-option" value="2">
+                      2 x
+                    </option>
+                  </select>
+                </div>
+                <div class="video-player__time-info">
+                  <span class="video-player__time-elapsed"></span>
+                  <span class="video-player__time-duration"></span>
+                </div>
+                <div class="video-player__fullscreen-btn">
+                  <i class="fas fa-expand"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
