@@ -34,7 +34,6 @@ body {
   position: relative;
   border: 5px solid var(--bg-color-dark);
   border-radius: 10px;
-  max-width: 80vw;
   max-width: 95vw;
   min-width: 0;
   background: var(--bg-color-dark);
